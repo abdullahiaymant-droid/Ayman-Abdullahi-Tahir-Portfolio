@@ -16,7 +16,6 @@ body{
 }
 
 header{
-    /* Changed from blue to Green */
     background:#1e5128; 
     position:sticky;
     top:0;
@@ -54,11 +53,9 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    /* Changed from yellow to Orange hover */
     color:#ff7a00;
 }
 
-/* Custom indicator for JS scroll tracking */
 nav ul li a.active-link {
     color: #ff7a00;
 }
@@ -83,7 +80,6 @@ nav ul li a.active-link {
 
 .hero-text h2{
     font-size:3rem;
-    /* Changed from blue to Green */
     color:#1e5128;
     margin:10px 0;
 }
@@ -109,14 +105,12 @@ nav ul li a.active-link {
     height:420px;
     object-fit:cover;
     border-radius:20px;
-    /* Changed border from blue to Green */
     border:5px solid #1e5128;
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 .btn{
     display:inline-block;
-    /* Changed button background to Orange */
     background:#ff7a00;
     color:white;
     padding:12px 24px;
@@ -127,7 +121,6 @@ nav ul li a.active-link {
 }
 
 .btn:hover{
-    /* Darker Orange on hover */
     background:#e06b00;
 }
 
@@ -137,7 +130,6 @@ section{
 
 section h2{
     text-align:center;
-    /* Changed heading color from blue to Green */
     color:#1e5128;
     margin-bottom:30px;
     font-size:2rem;
@@ -178,7 +170,6 @@ section h2{
 }
 
 .project-card h3{
-    /* Changed project title color from blue to Green */
     color:#1e5128;
     margin-bottom:10px;
 }
@@ -208,7 +199,6 @@ form textarea{
 }
 
 form button{
-    /* Changed submit button to Green */
     background:#1e5128;
     color:white;
     border:none;
@@ -219,12 +209,10 @@ form button{
 }
 
 form button:hover{
-    /* Darker Green on hover */
     background:#14371b;
 }
 
 footer{
-    /* Changed footer background from blue to Green */
     background:#1e5128;
     color:white;
     text-align:center;
@@ -234,47 +222,93 @@ footer{
 
 @media(max-width:900px){
 
-    .hero{
-        flex-direction:column-reverse;
-        text-align:center;
-    }
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
 
-    .hero-text{
-        margin-top:30px;
-    }
+.hero-text{
+margin-top:30px;
+}
 
-    .hero-text p{
-        margin:auto;
-        margin-bottom:20px;
-    }
+.hero-text p{
+margin:auto;
+margin-bottom:20px;
+}
 
-    .hero-image img{
-        width:260px;
-        height:340px;
-    }
+.hero-image img{
+width:260px;
+height:340px;
+}
 
-    nav{
-        flex-direction:column;
-    }
+nav{
+flex-direction:column;
+}
 
-    nav ul{
-        justify-content:center;
-        margin-top:10px;
-    }
+nav ul{
+justify-content:center;
+margin-top:10px;
+}
+}
+
+.media-card {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.media-element {
+width: 100%;
+margin-top: 15px;
+border-radius: 8px;
+}
+
+.media-iframe {
+width: 100%;
+height: 200px;
+border: 2px solid #1e5128;
+border-radius: 8px;
+margin-top: 15px;
+}
+
+audio.media-element {
+outline: none;
+}
+.media-card {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.media-element {
+width: 100%;
+margin-top: 15px;
+border-radius: 8px;
+}
+
+.media-iframe {
+width: 100%;
+height: 200px;
+border: 2px solid #1e5128;
+border-radius: 8px;
+margin-top: 15px;
+}
+
+audio.media-element {
+outline: none;
 }
 
 @media(max-width:600px){
+.hero-text h2{
+font-size:2.2rem;
+}
 
-    .hero-text h2{
-        font-size:2.2rem;
-    }
+section{
+padding:50px 6%;
+}
 
-    section{
-        padding:50px 6%;
-    }
-
-    nav ul li{
-        margin:5px;
-    }
+nav ul li{
+margin:5px;
+}
 
 }
